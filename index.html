@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0d3b36" />
+  <meta name="description" content="Carta digital de Oceanic Restobar, Reñaca." />
+  <title>BOCABAR Sushi Concón · Carta digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="BOCABAR Sushi Concón, inicio"><span class="brand-mark">B</span><span>BOCABAR <b>SUSHI CONCÓN</b></span></a>
+    <nav aria-label="Navegación principal"><a href="#carta">Carta</a><a href="#experiencia">Experiencia</a><a href="#contacto">Contacto</a></nav>
+    <a class="nav-cta" href="#reserva">Reservar mesa <span>↗</span></a>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> Sushi bar · Concón</p><h1>Todo el<br><em>sabor</em></h1><p class="hero-intro">Rolls, nigiris y coctelería para compartir sin complicaciones. Personaliza tu pedido y pregunta lo que necesites.</p><div class="hero-actions"><a class="button primary" href="#carta">Ver la carta <span>↓</span></a><button class="button ghost" data-action="attention">Necesito ayuda</button></div><div class="hero-note"><span>✦</span> Carta actualizada · Consulta disponibilidad en tiempo real</div></div>
+      <div class="hero-visual"><div class="sun"></div><div class="hero-card"><span class="tag">MÁS PEDIDO</span><h2>Omakase Bocabox</h2><p>Selección del chef para compartir<br>y disfrutar sin pensar demasiado</p><strong>$24.900</strong></div><div class="wave-line"></div></div>
+    </section>
+
+    <section class="service-strip"><div><span class="service-icon">⌁</span><div><b>Concón centro</b><small>Ven a compartir</small></div></div><div><span class="service-icon">◷</span><div><b>12:30 — 23:30</b><small>Cocina abierta</small></div></div><div><span class="service-icon">◉</span><div><b>Modifica tu pedido</b><small>Te ayudamos en el acto</small></div></div><a class="whatsapp-link" href="https://wa.me/56922334146" target="_blank" rel="noreferrer">Hablar por WhatsApp <span>↗</span></a></section>
+
+    <section id="carta" class="menu-section"><div class="section-heading"><div><p class="eyebrow">Nuestra carta</p><h2>Elige tu momento</h2></div><p class="section-description">Productos marcados como <span class="available">● disponibles</span> están listos para pedir hoy.</p></div><div class="category-tabs" role="tablist"><button class="tab active" data-category="todos">Todo</button><button class="tab" data-category="entradas">Para compartir</button><button class="tab" data-category="fondos">Fondos</button><button class="tab" data-category="cocteles">Bar & coctelería</button></div><div id="menu-grid" class="menu-grid"></div></section>
+
+    <section id="experiencia" class="experience"><div class="experience-photo"><span class="photo-label">BOCABAR / 01</span><div class="photo-overlay">Tu antojo,<br><em>a tu manera</em></div></div><div class="experience-copy"><p class="eyebrow">Pide sin quedarte con dudas</p><h2>Pregunta,<br><em>modifica.</em></h2><p>¿Quieres cambiar un ingrediente o tienes una consulta? Revisa los modificadores disponibles y escríbenos directo si necesitas ayuda.</p><button class="text-button" data-action="attention">¿Necesitas ayuda? Escríbenos <span>→</span></button></div></section>
+
+    <section id="reserva" class="reservation"><div><p class="eyebrow">Tu mesa te espera</p><h2>Reserva o consulta<br>por <em>WhatsApp</em></h2><p>Cuéntanos cuándo nos visitas y te respondemos directamente.</p></div><form id="reservation-form"><label>Nombre<input name="name" required placeholder="Tu nombre" /></label><div class="form-row"><label>Fecha<input name="date" type="date" required /></label><label>Personas<select name="people"><option>2 personas</option><option>3 personas</option><option>4 personas</option><option>5+ personas</option></select></label></div><button class="button light" type="submit">Enviar solicitud <span>↗</span></button></form></section>
+  </main>
+
+  <footer id="contacto"><div class="footer-brand"><span class="brand-mark">B</span><div><strong>BOCABAR SUSHI CONCÓN</strong><small>Concón · Región de Valparaíso</small></div></div><div class="footer-links"><a href="tel:+56224162223">+56 2 2416 2223</a><a href="mailto:contacto@bocabar.cl">contacto@bocabar.cl</a><a class="prototype" href="https://spacehost.cl" target="_blank" rel="noreferrer">Prototipo de SpaceHost ↗</a></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

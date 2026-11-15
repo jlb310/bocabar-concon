@@ -6,6 +6,8 @@ const items = [
   {name:'Ramen de la casa', description:'Caldo miso, cerdo, huevo y verduras · opción sin picante', price:'$12.900', category:'fondos'},
   {name:'Mojito Ramazzotti', description:'Ramazzotti, limón, menta y agua con gas · consulta modificaciones', price:'$7.500', category:'cocteles'}
 ];
+const phoneLink=document.querySelector('#phone-link');
+if(phoneLink){ const phone=phoneLink.dataset.phone||''; phoneLink.href=`tel:${phone}`; }
 const menuGrid = document.querySelector('#menu-grid');
 const toast = document.querySelector('#toast');
 let toastTimer;

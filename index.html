@@ -1,40 +1,145 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0d3b36" />
-  <meta name="description" content="Carta digital de Oceanic Restobar, Reñaca." />
-  <title>BOCABAR Sushi Concón · Carta digital</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0e0d0c">
+<title>BOCABAR · Sushi bar en Concón</title>
+<meta name="description" content="BOCABAR Sushi Concón: rolls, nigiris, ramen y coctelería para compartir. Carta digital, pedidos y reservas por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#inicio" aria-label="BOCABAR Sushi Concón, inicio"><span class="brand-mark">B</span><span>BOCABAR <b>SUSHI CONCÓN</b></span></a>
-    <nav aria-label="Navegación principal"><a href="#carta">Carta</a><a href="#experiencia">Experiencia</a><a href="#contacto">Contacto</a></nav>
-    <a class="nav-cta" href="#reserva">Reservar mesa <span>↗</span></a>
-  </header>
+<header class="nav" id="nav">
+  <a class="marca" href="#inicio" aria-label="BOCABAR, inicio"><span class="sello" aria-hidden="true">ボ</span><span>BOCABAR</span></a>
+  <nav class="nav-links" aria-label="Secciones">
+    <a href="#carta">Carta</a>
+    <a href="#a-tu-manera">A tu manera</a>
+    <a href="#visita">Visítanos</a>
+  </nav>
+  <a class="nav-cta" href="#reserva">Reservar</a>
+</header>
 
-  <main>
-    <section id="inicio" class="hero">
-      <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> Sushi bar · Concón</p><h1>Todo el<br><em>sabor</em></h1><p class="hero-intro">Rolls, nigiris y coctelería para compartir sin complicaciones. Personaliza tu pedido y pregunta lo que necesites.</p><div class="hero-actions"><a class="button primary" href="#carta">Ver la carta <span>↓</span></a><button class="button ghost" data-action="attention">Necesito ayuda</button></div><div class="hero-note"><span>✦</span> Carta actualizada · Consulta disponibilidad en tiempo real</div></div>
-      <div class="hero-visual"><div class="sun"></div><div class="hero-card"><span class="tag">MÁS PEDIDO</span><h2>Omakase Bocabox</h2><p>Selección del chef para compartir<br>y disfrutar sin pensar demasiado</p><strong>$24.900</strong></div><div class="wave-line"></div></div>
-    </section>
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-foto">
+      <img src="https://images.unsplash.com/photo-1778327564859-d9155c7177d6?w=1600&q=72&auto=format&fit=crop"
+           srcset="https://images.unsplash.com/photo-1778327564859-d9155c7177d6?w=800&q=70&auto=format&fit=crop 800w, https://images.unsplash.com/photo-1778327564859-d9155c7177d6?w=1600&q=72&auto=format&fit=crop 1600w, https://images.unsplash.com/photo-1778327564859-d9155c7177d6?w=2400&q=72&auto=format&fit=crop 2400w"
+           sizes="100vw" alt="Barra de un sushi bar con faroles encendidos" fetchpriority="high">
+    </div>
+    <div class="hero-velo"></div>
+    <div class="hero-contenido">
+      <p class="eti entra">Sushi bar · Concón</p>
+      <h1 class="entra">Todo el sabor,<br><em>para compartir.</em></h1>
+      <p class="hero-bajada entra">Rolls, nigiris, ramen y coctelería. Elige en la carta, pide cambios sin complicarte y te lo dejamos a tu manera.</p>
+      <div class="hero-acciones entra">
+        <a class="boton boton--rojo" href="#carta">Ver la carta</a>
+        <button class="boton boton--linea" type="button" data-accion="ayuda">Necesito ayuda</button>
+      </div>
+    </div>
+    <div class="hero-pie">
+      <p class="estado" data-estado><i></i><span>Hoy de 12:30 a 23:30</span></p>
+      <span class="vertical" aria-hidden="true">鮨 · BOCABAR · 鮨</span>
+    </div>
+  </section>
 
-    <section class="service-strip"><div><span class="service-icon">⌁</span><div><b>Concón centro</b><small>Ven a compartir</small></div></div><div><span class="service-icon">◷</span><div><b>12:30 — 23:30</b><small>Cocina abierta</small></div></div><div><span class="service-icon">◉</span><div><b>Modifica tu pedido</b><small>Te ayudamos en el acto</small></div></div><a class="whatsapp-link" href="https://wa.me/56922334146" target="_blank" rel="noreferrer">Hablar por WhatsApp <span>↗</span></a></section>
+  <section class="destacado" aria-label="Lo más pedido">
+    <figure class="destacado-foto revela">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?w=1400&q=72&auto=format&fit=crop" alt="Nigiris de salmón y atún sobre plato negro">
+    </figure>
+    <div class="destacado-texto">
+      <p class="eti revela">El más pedido</p>
+      <h2 class="revela">Omakase<br><em>Bocabox.</em></h2>
+      <p class="revela">La selección del chef para compartir: rolls, nigiris y lo mejor de la barra del día. Tú eliges con quién; nosotros, qué va adentro.</p>
+      <div class="destacado-pie revela">
+        <strong>$24.900</strong>
+        <button class="boton boton--rojo" type="button" data-pedir="Omakase Bocabox">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </section>
 
-    <section id="carta" class="menu-section"><div class="section-heading"><div><p class="eyebrow">Nuestra carta</p><h2>Elige tu momento</h2></div><p class="section-description">Productos marcados como <span class="available">● disponibles</span> están listos para pedir hoy.</p></div><div class="category-tabs" role="tablist"><button class="tab active" data-category="todos">Todo</button><button class="tab" data-category="entradas">Para compartir</button><button class="tab" data-category="fondos">Fondos</button><button class="tab" data-category="cocteles">Bar & coctelería</button></div><div id="menu-grid" class="menu-grid"></div></section>
+  <section class="carta" id="carta">
+    <header class="seccion-cab">
+      <p class="eti revela">La carta</p>
+      <h2 class="revela">Elige tu <em>momento.</em></h2>
+      <p class="seccion-bajada revela">Toca un plato y el pedido sale listo por WhatsApp. Si quieres un cambio, escríbelo en el mensaje.</p>
+    </header>
+    <div class="pestanas" role="tablist" aria-label="Categorías de la carta">
+      <button class="pestana activa" role="tab" aria-selected="true" data-cat="todos">Todo</button>
+      <button class="pestana" role="tab" aria-selected="false" data-cat="compartir">Para compartir</button>
+      <button class="pestana" role="tab" aria-selected="false" data-cat="fondos">Rolls y fondos</button>
+      <button class="pestana" role="tab" aria-selected="false" data-cat="barra">Barra</button>
+    </div>
+    <div class="platos" id="platos" aria-live="polite"></div>
+    <p class="carta-nota">Precios en pesos chilenos. Disponibilidad según el día: te confirmamos por WhatsApp antes de preparar.</p>
+  </section>
 
-    <section id="experiencia" class="experience"><div class="experience-photo"><span class="photo-label">BOCABAR / 01</span><div class="photo-overlay">Tu antojo,<br><em>a tu manera</em></div></div><div class="experience-copy"><p class="eyebrow">Pide sin quedarte con dudas</p><h2>Pregunta,<br><em>modifica.</em></h2><p>¿Quieres cambiar un ingrediente o tienes una consulta? Revisa los modificadores disponibles y escríbenos directo si necesitas ayuda.</p><button class="text-button" data-action="attention">¿Necesitas ayuda? Escríbenos <span>→</span></button></div></section>
+  <section class="manera" id="a-tu-manera">
+    <div class="manera-texto">
+      <p class="eti revela">A tu manera</p>
+      <h2 class="revela">Pregunta.<br><em>Cambia.</em><br>Disfruta.</h2>
+      <ol class="pasos">
+        <li class="revela"><span>01</span><div><h3>Elige</h3><p>Revisa la carta desde la mesa o desde tu casa.</p></div></li>
+        <li class="revela"><span>02</span><div><h3>Personaliza</h3><p>Sin queso crema, sin picante, otra salsa: dinos y lo ajustamos.</p></div></li>
+        <li class="revela"><span>03</span><div><h3>Te respondemos</h3><p>Por WhatsApp, directo desde la barra.</p></div></li>
+      </ol>
+      <button class="enlace revela" type="button" data-accion="ayuda">¿Dudas con un plato? Escríbenos →</button>
+    </div>
+    <figure class="manera-foto revela">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1730900737644-e146f78db8e7?w=1100&q=72&auto=format&fit=crop" alt="Roll de sushi tomado con palillos sobre fondo negro">
+    </figure>
+  </section>
 
-    <section id="reserva" class="reservation"><div><p class="eyebrow">Tu mesa te espera</p><h2>Reserva o consulta<br>por <em>WhatsApp</em></h2><p>Cuéntanos cuándo nos visitas y te respondemos directamente.</p></div><form id="reservation-form"><label>Nombre<input name="name" required placeholder="Tu nombre" /></label><div class="form-row"><label>Fecha<input name="date" type="date" required /></label><label>Personas<select name="people"><option>2 personas</option><option>3 personas</option><option>4 personas</option><option>5+ personas</option></select></label></div><button class="button light" type="submit">Enviar solicitud <span>↗</span></button></form></section>
-  </main>
+  <div class="cinta" aria-hidden="true">
+    <div><span>Bocabox</span><span>Gyozas</span><span>Roll Bocabará</span><span>Tartar de salmón</span><span>Ramen</span><span>Mojito Ramazzotti</span><span>Bocabox</span><span>Gyozas</span><span>Roll Bocabará</span><span>Tartar de salmón</span><span>Ramen</span><span>Mojito Ramazzotti</span></div>
+  </div>
 
-  <footer id="contacto"><div class="footer-brand"><span class="brand-mark">B</span><div><strong>BOCABAR SUSHI CONCÓN</strong><small>Concón · Región de Valparaíso</small></div></div><div class="footer-links"><span class="phone-display">+56 2 2416 2223</span><a href="mailto:contacto@bocabar.cl">contacto@bocabar.cl</a><a class="prototype" href="https://spacehost.cl" target="_blank" rel="noreferrer">Prototipo de SpaceHost ↗</a></div></footer>
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script type="module" src="./src/main.js"></script>
+  <section class="galeria" aria-label="Ambiente">
+    <figure class="g1 revela"><img loading="lazy" src="https://images.unsplash.com/photo-1758580815174-7304bd3f74c8?w=1000&q=70&auto=format&fit=crop" alt="Chefs trabajando tras la barra de un restaurante"></figure>
+    <figure class="g2 revela"><img loading="lazy" src="https://images.unsplash.com/photo-1738681336104-608b4e7dc3b0?w=800&q=70&auto=format&fit=crop" alt="Gyozas doradas en plato negro"></figure>
+    <figure class="g3 revela"><img loading="lazy" src="https://images.unsplash.com/photo-1772311698901-fe3fa07141be?w=800&q=70&auto=format&fit=crop" alt="Tres cócteles sobre una barra oscura"></figure>
+    <figure class="g4 revela"><img loading="lazy" src="https://images.unsplash.com/photo-1784378578794-f973c7ad4a86?w=1000&q=70&auto=format&fit=crop" alt="Ramen con huevo y palillos"></figure>
+  </section>
+
+  <section class="reserva" id="reserva">
+    <div class="reserva-texto">
+      <p class="eti revela">Tu mesa</p>
+      <h2 class="revela">Reserva por<br><em>WhatsApp.</em></h2>
+      <p class="revela">Cuéntanos cuándo vienes y cuántos son. Te confirmamos la disponibilidad directo.</p>
+    </div>
+    <form class="formulario revela" id="form-reserva">
+      <label>Nombre<input name="nombre" required autocomplete="name" placeholder="Tu nombre"></label>
+      <div class="fila">
+        <label>Fecha<input name="fecha" type="date" required></label>
+        <label>Hora<select name="hora"><option>13:00</option><option>14:00</option><option>20:00</option><option selected>21:00</option><option>22:00</option></select></label>
+      </div>
+      <label>Personas<select name="personas"><option>2 personas</option><option>3 personas</option><option>4 personas</option><option>5 o más</option></select></label>
+      <button class="boton boton--rojo" type="submit">Enviar solicitud</button>
+    </form>
+  </section>
+
+  <section class="visita" id="visita">
+    <div><span class="eti">Dónde</span><p>Concón<br>Región de Valparaíso</p></div>
+    <div><span class="eti">Cuándo</span><p>Todos los días<br>12:30 — 23:30</p></div>
+    <div><span class="eti">Contacto</span><p><a href="https://wa.me/56922334146" target="_blank" rel="noopener">WhatsApp +56 9 2233 4146</a><br><a href="tel:+56224162223">+56 2 2416 2223</a></p></div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="pie-marca"><span class="sello" aria-hidden="true">ボ</span>BOCABAR</div>
+  <p>Sushi bar · Concón · <a href="mailto:contacto@bocabar.cl">contacto@bocabar.cl</a></p>
+  <p class="pie-creditos">Fotos de referencia: Kristijan Arsov, Mahmoud Fawzy, Ömer Taha Çetin, Filipp Romanovski, Mikey Frost, mediha ekici, Oleksii Tsaryuk, Alberto Gasco e ikhsan baihaqi en <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> · Prototipo de <a href="https://spacehost.cl" target="_blank" rel="noopener">SpaceHost</a></p>
+</footer>
+
+<button class="flotante" type="button" data-accion="ayuda" aria-label="Pedir ayuda por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3z"/></svg>
+  <span>Ayuda</span>
+</button>
+<div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+<script type="module" src="./src/main.js"></script>
 </body>
 </html>

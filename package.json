@@ -2,5 +2,5 @@
   "name": "bocabar-concon",
   "private": true,
   "type": "module",
-  "description": "Landing y carta digital de BOCABAR Sushi Concón. Sitio estático: index.html, styles.css y src/main.js."
+  "description": "Demo de BOCABAR Sushi Concón (Spacehost): carta digital con disponibilidad y opciones, reservas por zona, pedidos y consultas desde la mesa y sus administradores. La landing está en /landing/."
 }
